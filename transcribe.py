@@ -21,7 +21,8 @@ def transcribe_audio():
             transcription = model.transcribe("temp_audio.wav")
             
             print("Transcription:")
-            print(transcription["text"])
+            transcribed_voice=transcription["text"]
+            return transcribed_voice
         
         except sr.WaitTimeoutError:
             print("No speech detected within the timeout period.")
@@ -30,6 +31,3 @@ def transcribe_audio():
         finally:
             if os.path.exists("temp_audio.wav"):
                 os.remove("temp_audio.wav")
-
-if __name__ == "__main__":
-    transcribe_audio()
