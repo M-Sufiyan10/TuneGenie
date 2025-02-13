@@ -4,3 +4,4 @@ openai-whisper
 SpeechRecognition
 yt-dlp
 requests
+dotenv
