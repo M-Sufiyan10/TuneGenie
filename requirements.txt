@@ -2,3 +2,5 @@ langchain-google-genai
 streamlit
 openai-whisper
 SpeechRecognition
+yt-dlp
+requests
