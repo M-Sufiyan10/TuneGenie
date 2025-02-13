@@ -1,0 +1,4 @@
+langchain-google-genai
+streamlit
+openai-whisper
+SpeechRecognition
