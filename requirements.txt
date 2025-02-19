@@ -5,4 +5,4 @@ SpeechRecognition
 yt-dlp
 requests
 python-dotenv
-pyaudio
+PyAudio
