@@ -40,11 +40,11 @@ def main():
     """Main function to summarize transcribed video content."""
     st.subheader("TUNEGENIE")
     api_keys = load_api_keys()
-    llm = initialize_llm(api_keys[1])
+    llm = initialize_llm(api_keys["google_api"])
     if not st.button("Input your voice"):
         return False
     query=transcribe_audio()
-    video_url = fetch_video_url(query, api_keys[0])
+    video_url = fetch_video_url(query, api_keys["youtube_api"])
     st.video(video_url)
     text_to_summarize = transcribe_video(video_url)
     summary = summarize_text(text_to_summarize, llm)
